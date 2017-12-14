@@ -1,0 +1,856 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: black;
+    overflow: hidden;
+    z-index: 10;
+    /*opacity: 0.8;*/
+}
+
+.menu__content {
+    position: relative;
+    margin: 17px auto;
+    width: 996px;
+    height: 46px
+}
+
+.logo {
+    display: block;
+    width: 159px;
+    height: 46px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: 10000px; /*文本缩进*/
+    overflow: hidden;
+    float: left;
+}
+.dongtai {
+    float: left;
+    margin-left: 10%;
+}
+.dongtaifont {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 80px;
+    line-height: 40px;
+   text-decoration: none;
+}
+
+.menu__home {
+    display: block;
+    float: right;
+    margin-left: 27px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none
+}
+
+.section {
+    /*5大盒子的定位模式，保证未来内部效果的实现*/
+    overflow: hidden;
+    position: relative;
+}
+.mod_banner_list__item{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mod_banner0{
+	position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background-size: cover;
+    
+}
+.mod_banner_pc{
+	position: relative;
+    width: 100%;
+    height: 800px;
+    background: url(../images/banner_pc.jpg) 50% no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.mod_banner0 .text{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -205px;
+    width: 578px;
+    height: 214px;
+    /*text-indent: -99em;*/
+    overflow: hidden;
+    background-image: url(../images/img_index.png);
+    background-position: 0 0;
+    z-index: 3
+}
+.mod_banner0 .watch{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -530px;
+    width: 476px;
+    height: 478px;
+    background: url(../images/watch_bg.png) 0 0 no-repeat;
+}
+.mod_banner0 .zhen{
+	position: absolute;
+    top: 220px;
+    left: 220px;
+    width: 131px;
+    height: 105px;
+    background-image: url(../images/img_index.png);
+    background-position: -448px -824px;
+    animation: watchHand 3s forwards;
+    transform-origin: 24px 24px
+}
+.mod_banner0 .shu1{
+	position: absolute;
+    top: 320px;
+    left: 204px;
+    width: 40px;
+    height: 50px;
+    background-image: url(../images/watch_numb.png);
+    animation: watchNumb1 2s forwards;
+}
+.mod_banner0 .shu2{
+	position: absolute;
+    top: 320px;
+    left: 248px;
+    width: 40px;
+    height: 50px;
+    background-image: url(../images/watch_numb.png);
+    animation: watchNumb2 2s forwards;
+}
+@keyframes watchHand {
+    0% {
+        transform: rotate(-250deg)
+    }
+    70% {
+        transform: rotate(3deg)
+    }
+    80% {
+        transform: rotate(-2deg)
+    }
+    90% {
+        transform: rotate(1deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+@keyframes watchNumb1 {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -300px
+    }
+}
+
+@keyframes watchNumb2 {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -500px
+    }
+}
+
+/*.mod_banner0 .text2{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -205px;
+    width: 578px;
+    height: 214px;
+    text-indent: -99em;
+    overflow: hidden;
+    background-image: url(../images/img_index.png);
+    background-position: -580px 0;
+    z-index: 3
+}*/
+
+.btn{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 12px;
+    margin-left: -2px;
+    width: 293px;
+    height: 69px;
+    /*text-indent: -99em;*/
+    overflow: hidden;
+    z-index: 9;
+    background-image: url(../images/img_index.png);
+    background-position: -372px -735px
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+/*MAC-------------------------------------------------*/
+.mod_banner_mac{
+	background: url(../images/banner_mac.jpg) no-repeat;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background-size: cover;
+    opacity: 1;
+    display: none;
+
+}
+
+.text2{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -205px;
+    width: 623px;
+    height: 145px;
+   /* text-indent: -99em;*/
+    overflow: hidden;
+    background-image: url(../images/img_index.png);
+    background-position: -580px 0;
+    z-index: 3;
+}
+.mod_banner_iphone{
+	background: url(../images/iphone_play_1.jpg);
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background-size: cover;
+    opacity: 1;
+    display: none;
+}
+.text3{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -185px;
+    margin-left: -2px;
+    width: 370px;
+    height: 159px;
+   /* text-indent: -99em;*/
+    overflow: hidden;
+    z-index: 9;
+    background-image: url(../images/img_index.png);
+    background-position: 0 -664px
+}
+
+.mod_banner_android{
+	background: url(../images/banner_android.jpg) 50% no-repeat;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background-size: cover;
+    opacity: 1;
+    display: none;
+}
+.text4{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -205px;
+    width: 520px;
+    height: 149px;
+    /*text-indent: -99em;*/
+    overflow: hidden;
+    background-image: url(../images/img_index.png);
+    background-position: -556px -361px;
+    z-index: 3
+}
+.download_list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 190px;
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, .12);
+    z-index: 5;
+}
+
+.type{
+	display: inline-block;
+    line-height: 999px;
+    overflow: hidden;
+    width: 110px;
+    height: 170px;
+    margin-right: 185px;
+    position: relative;
+    opacity: 0.4;
+    /*vertical-align: top*/
+}
+
+.type:hover {
+	opacity: 1;
+} 
+.type1{
+	background-image: url(../images/img_index.png);
+    background-position: -336px -824px;
+    opacity: 0.4;
+}
+.type1:hover{
+	cursor: pointer;
+}
+.type2{
+	background-image: url(../images/img_index.png);
+    background-position: -224px -824px;
+}
+.type2:hover{
+	cursor: pointer;
+}
+/*.type2:hover .mod_banner_pc{
+	display: none;
+}
+.type2:hover .mod_banner_mac{
+	display: block;
+}*/
+.type3{
+	background-image: url(../images/img_index.png);
+    background-position: -112px -824px;
+}
+.type3:hover{
+	cursor: pointer;
+}
+.type4{
+	background-image: url(../images/img_index.png);
+    background-position: 0 -824px;
+    margin-right: 0;
+}
+.type4:hover{
+	cursor: pointer;
+}
+/*第二页开始----------------------------------------------------------------------------------------*/
+.mod_banner1{
+	position: relative;
+    width: 100%;
+    height: 800px;
+    background: url(../images/a001.jpg) 50% no-repeat;
+    background-size: cover;
+}
+.mod_banner1 .text21{
+	 position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -281px;
+    margin-top: -100px;
+    width: 563px;
+    height: 75px;
+    background-image: url(../images/img_index.png);
+    background-position: -445px -512px;
+    z-index: 2
+}
+.mod_banner1 .text22{
+	
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 0;
+    margin-left: -174px;
+    width: 348px;
+    height: 69px;
+    background-image: url(../images/img_index.png);
+    background-position: -842px -664px;
+    z-index: 2
+}
+.part_singer__pic{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 211px;
+    display: none;
+    animation: picani 3s;
+}
+@keyframes picani{
+	0%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.part_singer__pic1{
+	
+	background-image:url(../images/1.png);
+	position: absolute;
+	margin: 0px 0px;
+}
+.part_singer__pic2{
+	
+	background-image:url(../images/2.png);
+	position: absolute;
+	margin: 0px 200px;
+}
+.part_singer__pic3{
+	
+	background-image:url(../images/3.png);
+	position: absolute;
+	margin: 0px 400px;
+
+}
+.part_singer__pic4{
+	
+	background-image:url(../images/20.jpg);
+	position: absolute;
+	margin: 0px 600px;
+}
+.part_singer__pic5{
+	
+	background-image:url(../images/5.png);
+	position: absolute;
+	margin: 0px 800px;
+}
+.part_singer__pic6{
+	
+	background-image:url(../images/6.png);
+	position: absolute;
+	margin: 0px 1000px;
+}
+.part_singer__pic7{
+	
+	background-image:url(../images/7.png);
+	position: absolute;
+	margin: 0px 1200px;
+}
+.part_singer__pic8{
+	
+	background-image:url(../images/8.png);
+	position: absolute;
+	margin: 211px 0px;
+}
+.part_singer__pic9{
+	
+	background-image:url(../images/22.jpg);
+	position: absolute;
+	margin: 211px 200px;
+}
+
+.part_singer__pic10{
+	
+	background-image:url(../images/28.jpg);
+	position: absolute;
+	margin: 211px 400px;
+}
+.part_singer__pic11{
+	
+	background-image:url(../images/9.png);
+	position: absolute;
+	margin: 211px 600px;
+}
+.part_singer__pic12{
+	
+	background-image:url(../images/12.png);
+	position: absolute;
+	margin: 211px 800px;
+}
+.part_singer__pic13{
+	
+	background-image:url(../images/24.jpg);
+	position: absolute;
+	margin: 211px 1000px;
+}
+.part_singer__pic14{
+	
+	background-image:url(../images/14.png);
+	position: absolute;
+	margin: 211px 1200px;
+}
+.part_singer__pic15{
+	
+	background-image:url(../images/15.png);
+	position: absolute;
+	margin: 422px 0px;
+}
+.part_singer__pic16{
+	
+	background-image:url(../images/16.png);
+	position: absolute;
+	margin: 422px 200px;
+}
+.part_singer__pic17{
+	
+	background-image:url(../images/26.jpg);
+	position: absolute;
+	margin: 422px 400px;
+}
+.part_singer__pic18{
+	
+	background-image:url(../images/18.png);
+	position: absolute;
+	margin: 422px 600px;
+}
+.part_singer__pic19{
+
+	background-image:url(../images/27.jpg);
+	position: absolute;
+	margin: 422px 800px;
+}
+.part_singer__pic20{
+	
+	background-image:url(../images/11.png);
+	position: absolute;
+	margin: 422px 1000px;
+}
+.part_singer__pic21{
+	
+	background-image:url(../images/21.jpg);
+	position: absolute;
+	margin: 422px 1200px;
+}
+.part_singer__pic22{
+	
+	background-image:url(../images/23.jpg);
+	position: absolute;
+	margin: 633px 0px;
+}
+.part_singer__pic23{
+	
+	background-image:url(../images/13.png);
+	position: absolute;
+	margin: 633px 200px;
+}
+.part_singer__pic24{
+	
+	background-image:url(../images/17.png);
+	position: absolute;
+	margin: 633px 400px;
+}
+.part_singer__pic25{
+	
+	background-image:url(../images/25.jpg);
+	position: absolute;
+	margin: 633px 600px;
+}
+.part_singer__pic26{
+	
+	background-image:url(../images/19.png);
+	position: absolute;
+	margin: 633px 800px;
+}
+.part_singer__pic27{
+	
+	background-image:url(../images/29.jpg);
+	position: absolute;
+	margin: 633px 1000px;
+}
+.part_singer__pic28{
+	
+	background-image:url(../images/10.png);
+	position: absolute;
+	margin: 633px 1200px;
+}
+
+/*第三页开始-----------------------------------------------------------------------------*/
+
+.mod_banner2{
+	position: relative;
+    width: 100%;
+    height: 800px;
+    background: url(../images/bg_lyric.jpg) 50% no-repeat;
+    background-size: cover;
+}
+.text31{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -504px;
+    margin-top: -130px;
+    width: 554px;
+    height: 149px;
+    background-image: url(../images/img_index.png);
+    background-position: 0 -361px;
+    z-index: 2;
+}
+.text32{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -504px;
+    margin-top: 50px;
+    width: 468px;
+    height: 69px;
+    background-image: url(../images/img_index.png);
+    background-position: -372px -664px;
+    z-index: 2;
+}
+.phonebox{
+	position: absolute;
+    top: 0;
+    left: 70%;
+    width: 580px;
+    height: 892px;
+    background-image: url(../images/lyric_phonebox.png);
+    opacity: 0;
+}
+.play{
+	animation: leftani 3s 1 forwards;	
+}
+@keyframes leftani{
+	0%{
+		left: 70%;
+		opacity: 0;
+	}
+	100%{
+		left: 55%;
+		opacity: 1;
+	}
+}
+.phone1{
+	position: absolute;
+    top: 138px;
+    left: 99px;
+    width: 350px;
+    height: 604px;
+    background: url(../images/lyric_phone1.jpg);
+    transform: rotate(7.5deg)/*父元素倾斜 子元素与父元素同样倾斜，并非继承！*/;
+    /*animation: lyricPhone 2s both;*/
+}
+/*@keyframes lyricPhone {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    80% {
+        opacity: 1
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}*/
+.phone2{
+	position: absolute;
+    top: 137px;
+    left: 97px;
+    width: 350px;
+    height: 604px;
+    background: url(../images/lyric_phone2.jpg);
+    transform: rotate(7.5deg);
+	opacity: 0;
+}
+.play2{
+	   animation: phone2 4s 1 forwards;
+}
+@keyframes phone2 {
+    0% {
+        opacity: 0;
+    }
+    25%{
+    	opacity: 0;
+    }
+    50%{
+    	opacity: 0;
+    }
+    75%{
+    	opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*第四页开始----------------------------------------------------------------------------------*/
+
+.mod_banner3{
+	position: relative;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background: url(../images/bg_like.jpg) 50% no-repeat;
+    background-size: cover;
+}
+.text41{
+	 position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -113px;
+    width: 615px;
+    height: 143px;
+    background-image: url(../images/img_index.png);
+    background-position: 0 -216px;
+    z-index: 2;
+}
+.text42{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 68px;
+    width: 550px;
+    height: 69px;
+    background-image: url(../images/img_index.png);
+    background-position: -445px -589px;
+    z-index: 2;
+}
+.phonebox2{
+	position: absolute;
+    top: 0;
+    left: 0%;
+    width: 450px;
+    height: 778px;
+    background: url(../images/like_phonebox.png) no-repeat;
+	opacity: 0;
+}
+.play3{
+	    animation: rightani 2s forwards;
+}
+@keyframes rightani{
+	
+	
+	0%{
+		opacity: 0;
+		left: 0%;
+	}
+
+	100%{
+		opacity: 1;
+		left: 10%;
+	}
+}
+
+
+.phone3{
+	position: absolute;
+    top: 176px;
+    left: 61px;
+    width: 315px;
+    height: 427px;
+    background: url(../images/like_phone.jpg) no-repeat;
+    transform: rotate(-5.5deg);
+
+}
+.play4{
+	    animation: topani 3s forwards;
+}
+@keyframes topani{
+	0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 0 -225px
+    }
+}
+/*第五页开始---------------------------------------------------------------------------*/
+.mod_banner4{
+	position: relative;
+    width: 100%;
+    height: 800px;
+    background: url(../images/bg_synchro.jpg) 50% no-repeat;
+    background-size: cover;
+}
+
+.mac1{
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -392px;
+    width: 620px;
+    height: 784px;
+    background: url(../images/synchro_mac1.png) 0 0 no-repeat;
+    z-index: 2;
+    /*animation: downani1 2s;*/
+}
+.mac2{
+	position: absolute;
+    bottom: 1%;
+    left: 50%;
+    width: 620px;
+    height: 376px;
+    background: url(../images/synchro_mac2.png) 0 0 no-repeat;
+    /*animation: downani2 2s;*/
+}
+
+.play5{
+    animation: downani1 3s forwards;
+}
+@keyframes downani1{
+	0%{
+		top: 40%;
+	}
+	100%{
+		top: 50%;
+	}
+}
+.play6{
+    animation: downani2 3s forwards;
+}
+@keyframes downani2{
+	0%{
+		bottom: 11%;
+	}
+	100%{
+		bottom: 1%;
+	}
+}
+.text51{
+	 position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -580px;
+    margin-top: -270px;
+    width: 544px;
+    height: 136px;
+    background-image: url(../images/img_index.png);
+    background-position: -617px -216px;
+    z-index: 2
+}
+.text52{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -580px;
+    margin-top: -108px;
+    width: 454px;
+    height: 63px;
+    background-image: url(../images/img_index.png);
+    background-position: -580px -147px;
+    z-index: 2
+}
+.phone4{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 0;
+    width: 255px;
+    height: 329px;
+    background-image: url(../images/synchro_phone.png);
+   /* animation: rightani2 3s;*/
+}
+.play7{
+	 animation: rightani2 3s forwards;
+}
+@keyframes rightani2{
+	0%{
+		left: 40%;
+		opacity: 0;
+	}
+	100%{
+		left: 50%;
+		opacity: 1;
+	}
+}

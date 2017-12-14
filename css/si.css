@@ -1,0 +1,123 @@
+.d{
+	width: 100%;
+	height: 830px;
+	position: relative;
+	background-image: url("../img/bg_index_top2.jpg");
+}
+.d .content {
+    color: #FFFFFF;
+    margin-top: 80px;
+    position: relative;
+    margin-left: 85px;
+}
+.d1{
+	/*transition: all 0.5s;*/
+	overflow: hidden;
+	position: relative;
+	height: 567px;
+	width: 288px;
+	float: left;
+	/*background: red;*/
+	margin-left: 2px;
+	margin-right: 2px;
+	/*background-image: url(../img/bg_index_top.jpg-max_age=2592000&v=2591d4829162dfda6b9112c771edda86.jpg);*/
+}
+.d1 .bg{
+	transition: all 0.5s;
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/bg_index_top.jpg-max_age=2592000&v=2591d4829162dfda6b9112c771edda86.jpg);
+}
+.d1 i{
+	 transition: all 1s;
+}
+.d1:hover div{
+	 transform: scale(1.2);
+	 /*z-index: 99;*/
+}
+.d1:hover i{
+	 transform: scale(1);
+	 opacity: 1;	 
+	 /*z-index: 99;*/
+}
+.d1:hover span{
+	 opacity: 0;	 
+	 /*z-index: 99;*/
+}
+.d1 .song-list a:hover{
+	color: #31C27C;
+}
+.d1-2{
+	background-position-x: 894px;	
+}
+.d1-3{
+	background-position-x: 596px;		
+}
+.d1-4{
+	background-position-x: 288px;		
+}
+.d .song-list {
+    display: block;
+    position: absolute;
+    top: 282px;
+    left: 50%;
+    margin-left: -80px;
+    width: 180px;
+    white-space: nowrap;
+}
+
+.d .tit-top {
+    display: block;
+    width: 66px;
+    height: 24px;
+    margin: auto auto 8px auto;
+    font-size: 20px;
+}
+
+.d .tit-pop {
+    font-size: 25px;
+}
+
+.d .content .ph-line {
+    position: absolute;
+    left: 50%;
+    top: 215px;
+    margin-left: -31px;
+    width: 62px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.d .icon-play{
+	opacity: 0;		
+}
+.d h3 {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    width: 200px;
+    height: 110px;
+}
+
+.d .song-list a {
+    font-size: 16px;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.d .song-list span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    line-height: 1.5;
+    text-indent: 2em;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}

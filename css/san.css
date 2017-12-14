@@ -1,0 +1,105 @@
+.c{
+	position: relative;
+	width: 100%;
+	height: 616px;
+	overflow: hidden;
+}
+.c .btn{
+	position: absolute;
+	height: 108px;
+	width: 0px;
+	top: 45%;
+	line-height: 108px;
+	background-color: rgb(70,70,70);
+	text-align: center;
+	color: #fff;
+	opacity: 0.5;
+	font-size: 30px;
+}
+.c .btn:hover{
+	background-color: #31C27C;
+	opacity: 1;
+	cursor: pointer;
+}
+.c .left{
+	left: 0;
+}
+.c .right{
+	right: 0;
+}
+.c .zuo{
+	
+}
+.c .you{
+	
+}
+.c .h{
+	color: black;
+}
+.c-1{
+	position: relative;
+	width: 1200px;
+	height: 172.5px;
+	margin: auto;
+	margin-top: 137px;
+	/*overflow: hidden;*/
+}
+.c-1-1{
+	position: relative;
+	width: 400px;
+	height: 100%;
+	margin: auto;
+}
+.c-1-2{
+	position: absolute;
+	width: 4400px;
+	left: -400px;
+}
+.c-1 li{
+	transition: all 0.5s;
+	float: left;
+	/*opacity: 0.5;*/
+}
+.c-1 img{
+	width:400px;
+	height: 172.5px;
+	margin: auto;
+}
+.bianda{
+	/*opacity: 1;*/
+	/*z-index: 99;*/
+	/*position: absolute;*/
+	transform: scaley(1.9) scaleX(2);
+	/*background: red;*/
+}
+.da{
+	width: 1200px;
+	height: 430px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.c5{
+	/*position: absolute;*/
+	margin: 0px auto;
+	width: 360px;
+	/*right: 0;*/
+}
+.c5 li{
+	float: left;
+	background: gainsboro;
+	margin-left: 10px;
+}
+.c5 li:hover{
+	background: #888;
+	cursor: pointer;
+}
+.c5 span{
+	display:block;
+	height: 3px;
+	width: 30px;
+	/*background: #888;
+	margin-left: 10px;*/
+}
+.c5-1{
+	background: #888;
+}
